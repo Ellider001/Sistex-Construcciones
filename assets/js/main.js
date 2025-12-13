@@ -297,4 +297,5 @@
     observer.observe(sliderWrapper);
 });
 
+
 })(jQuery);
