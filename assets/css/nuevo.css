@@ -289,12 +289,12 @@
 }
 
 .slider-img {
-    width: 33.3333%;
-    height: 600px;
-    flex-shrink: 0;
-    object-fit: cover;
-    background-color: black;
-}
+     width: 33.3333%; 
+     height: 600px; 
+     flex-shrink: 0; 
+     object-fit: cover; 
+     background-color: black; 
+    }
 
 .slider-btn {
     position: absolute;
