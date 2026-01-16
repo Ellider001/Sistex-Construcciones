@@ -248,7 +248,7 @@ hr {
 
 .btn {
 	background: $btn_bg;
-	-moz-user-select: none;
+	-moz-user-selecct: none;
 	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
@@ -309,7 +309,7 @@ hr {
 
 .white-btn {
 	background:#fff;
-	-moz-user-select: none;
+	-moz-user-selecct: none;
 	text-transform: uppercase;
 	color: #161e46;
 	cursor: pointer;
@@ -497,7 +497,7 @@ hr {
 	-moz-animation-name: float-bob;
 	-moz-animation-duration: 2s;
 	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: linear;
+	-moz-animation-timing-funcction: linear;
 	-ms-animation-name: float-bob;
 	-ms-animation-duration: 2s;
 	-ms-animation-iteration-count: infinite;
