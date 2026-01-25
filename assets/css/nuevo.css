@@ -288,14 +288,25 @@
     transition: transform 0.5s ease;
 }
 
-.slider-img {
-     width: 33.3333%; 
-     height: 600px; 
-     flex-shrink: 0; 
-     object-fit: cover; 
-     background-color: black; 
-    }
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 
+/* IMÁGENES SIN CORTES */
+.slider-img {
+    width: 33.3333%;
+    height: auto;              /* 👈 se adapta a la imagen */
+    max-height: 600px;         /* límite máximo */
+    flex-shrink: 0;
+    object-fit: contain;       /* 👈 NO corta */
+    background-color: transparent;
+    display: block;
+}
+
+/* BOTONES */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -309,59 +320,47 @@
     z-index: 1;
 }
 
-.slider-btn.prev {
-    left: 10px;
-}
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
 
-.slider-btn.next {
-    right: 10px;
-}
-
-
+/* ESPACIADOS */
 .services-details-area {
-    margin-bottom: 20px !important; /* un poco más de espacio entre secciones */
+    margin-bottom: 20px !important;
 }
 
 .single-services {
-    padding-top: 15px !important;    /* un poco más de padding arriba */
-    padding-bottom: 15px !important; /* un poco más de padding abajo */
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 .section-padding2 {
-    padding-top: 15px !important;    /* un poco más de padding arriba */
-    padding-bottom: 15px !important; /* un poco más de padding abajo */
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
 .details-img.mb-40 {
-    margin-bottom: 20px !important; /* un poco más de espacio debajo del slider */
+    margin-bottom: 20px !important;
 }
 
 .details-caption {
-    margin-top: 10px !important;     /* un poco más de espacio arriba */
+    margin-top: 10px !important;
 }
 
 .details-caption p.mb-50 {
-    margin-bottom: 15px !important; /* un poco más de espacio debajo de párrafos */
+    margin-bottom: 15px !important;
 }
 
-/* 📱 Media Queries: responsive para tablets y celulares */
+/* 📱 RESPONSIVE */
 @media (max-width: 1024px) {
-    .slider-wrapper {
-        height: 500px;
-    }
-
     .slider-img {
-        height: 500px;
+        max-height: 500px;
     }
 }
 
 @media (max-width: 768px) {
-    .slider-wrapper {
-        height: 400px;
-    }
-
     .slider-img {
-        height: 400px;
+        max-height: 400px;
+        width: 100%;
     }
 
     .slider-btn {
@@ -371,12 +370,8 @@
 }
 
 @media (max-width: 480px) {
-    .slider-wrapper {
-        height: 300px;
-    }
-
     .slider-img {
-        height: 300px;
+        max-height: 300px;
     }
 
     .slider-btn {
@@ -384,7 +379,6 @@
         padding: 6px;
     }
 }
-
 
 a.active {
     color: #1696e7 ; /* Cambia al color que prefieras */
@@ -493,3 +487,13 @@ a.active {
         max-width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
